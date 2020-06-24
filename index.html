@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>eJuta Q&A</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="scripts.js"></script>
+
+</head>
+
+<body>
+    <div class="content">
+        <section>
+            <h1>Multiple choice questions</h1>
+
+            <div class="question">
+                <p> <b>Question 1:</b> Which one of these are animals?</p>
+
+                <input type="checkbox" name="q1" value="Cats" />Cats<br />
+                <input type="checkbox" name="q1" value="Dogs" />Dogs<br />
+                <input type="checkbox" name="q1" value="Tree" />Tree<br />
+                <input type="checkbox" name="q1" value="Sand" />Sand<br />
+
+                <div class="answer1"> </div>
+            </div>
+            <hr />
+
+            <div class="question">
+                <p> <b>Question 2:</b> Cows eat grass</p>
+
+                <input type="radio" name="q2" value="true" />True<br />
+                <input type="radio" name="q2" value="false" />False<br />
+
+                <div class="answer2"> </div>
+            </div>
+            <hr />
+
+            <div class="question">
+                <p> <b>Question 3:</b> Choose a continent?</p>
+
+                <input type="checkbox" name="q3" value="Algeria" />Algeria<br />
+                <input type="checkbox" name="q3" value="Africa" />Africa<br />
+                <input type="checkbox" name="q3" value="Brazil" />Brazil<br />
+                <input type="checkbox" name="q3" value="Europe" />Europe<br />
+
+                <div class="answer3"> </div>
+            </div>
+            <hr />
+
+            <div class="controls">
+                <button type="submit" onclick="onSubmit()"> Check Answer</button>
+                <!-- <button class="danger" onclick="resetForm()"> Clear </button> -->
+            </div>
+
+        </section>
+
+        <section>
+            <h1>Short questions</h1>
+            <div class="short-question">
+                <p> <b>Question 1: </b>Types of fish?</p>
+                <p class="answer q1">
+                    ANSWER: Fish generally fall into three categories; carnivore, herbivore and omnivore.
+                </p>
+                <button type="submit" onclick="showShortQuestionsAnswer('q1')"> Check Answer </button>
+                <button class="danger" onclick="resetShortQuestionAnswer('q1')"> Clear </button>
+            </div>
+            <div class="short-question">
+                <p> <b>Question 2: </b>What is chicken?</p>
+                <p class="answer q2">
+                    ANSWER: The chicken is a type of domesticated fowl, a subspecies of the red junglefowl.
+                </p>
+                <button type="submit" onclick="showShortQuestionsAnswer('q2')"> Check Answer </button>
+                <button class="danger" onclick="resetShortQuestionAnswer('q2')"> Clear </button>
+            </div>
+        </section>
+    </div>
+
+</body>
+
+</html>
